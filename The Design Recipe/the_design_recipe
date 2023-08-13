@@ -1,0 +1,36 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname the_design_recipe) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+;FAHRENHEIT TO CELSIUS WITH DESIGN RECIPE
+;------------------------------------------
+
+; F degrees Fahrenheit equal 5/9 * (F - 32) degrees Celsius
+
+; Step 1. Data
+; A Temperature is a Number
+;interpretation: a temperature in degrees Fahrenheit or Celsius
+
+;Step 2. Input/Output
+; Signature
+; Fahrenheit->Celsius : Temperature -> Temperature
+; Purpose Statement:
+; Converts a temperature in Fahrenheit to Celsius
+(define (fahrenheit->celsius fahr-temp)
+  0)
+
+;Step 3. Examples
+;(fahrenheit->celsius 32) should be 0
+(check-expect (fahrenheit->celsius 32) 0)
+(check-expect (fahrenheit->celsius 212) 100)
+
+;Step 4. Template
+(define (fahrenheit->celsius fahr-temp)
+  (... fahr-temp ...))
+
+;Step 5. Code
+(define (fahrenheit->celsius fahr-temp)
+  (* 5/9 (- fahr-temp 32)))
+
+;Step 6. Testing
+;Going back to the example and testing it based on the code which is writen. 
+
